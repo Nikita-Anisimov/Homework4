@@ -25,12 +25,12 @@ public class Main {
             System.out.println("Если скорость " + speed + " , то придется заплатить штраф");
         }
 
-        int age2 = 24;
+        int age2 = 6;
         System.out.println("Задача 4:");
-        if (age2 >2 && age2 <6) {
+        if (age2 >=2 && age2 <=6) {
             System.out.println("Если возраст человека равен " + age2 + ", то ему нужно ходить в детский сад");
         }
-        else if (age2 > 7 && age2 <17) {
+        else if (age2 >= 7 && age2 <=17) {
             System.out.println("Если возраст человека равен " + age2 + ", то ему нужно ходить в школу");
         }
         else if (age2 >= 18 && age2 <= 24) {
@@ -46,24 +46,24 @@ public class Main {
         if (age3 < 5) {
             System.out.println("Если возраст ребенка равен " + age3 + ", то ему нельзя кататься на атракционе");
         }
-        else if (age3 > 5 && age3 <=14 && parent1) {
+        else if (age3 >= 5 && age3 <=14 && parent1) {
             System.out.println("Если возраст ребенка равен " + age3 + ", то он может кататься, если только в сопровождении взрослого");
         }
-        else if (age3 > 5 && age3 <=14 && parent2) {
+        else if (age3 >= 5 && age3 <=14 && parent2) {
             System.out.println("Если возраст ребенка равен " + age3 + ", то он не может кататься, если нет сопровождения взрослого");
         }
         if (age3 > 14) {
             System.out.println("Если возраст ребенка равен " + age3 + ", то он может кататься без сопровождения взрослого");
         }
 
-        int passengers = 189;
+        int passengers = 60;
         int capacity = 102;
         int seating = 60;
         System.out.println("Задача 6:");
-        if (passengers < capacity && passengers > seating){
+        if (passengers <= capacity && passengers > seating){
             System.out.println("Есть стоячие места");
         }
-        else if (passengers < seating) {
+        else if (passengers <= seating) {
             System.out.println("Есть сидячие места");
         }
         else  {
